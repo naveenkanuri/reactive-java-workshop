@@ -1,6 +1,9 @@
 package io.javabrains.reactiveworkshop;
 
 import java.io.IOException;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
 
 public class Exercise2 {
 
@@ -10,6 +13,8 @@ public class Exercise2 {
 
         // Print all numbers in the ReactiveSources.intNumbersFlux stream
         // TODO: Write code here
+        Flux<Integer> flux = ReactiveSources.intNumbersFlux();
+
 
         // Print all users in the ReactiveSources.userFlux stream
         // TODO: Write code here
